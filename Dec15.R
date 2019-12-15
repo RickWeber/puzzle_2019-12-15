@@ -13,6 +13,6 @@ play <- function(left = 3){ # simulate the rest of the tournament
     return(play(left))
 }
 
-simulation <- rep(3,1e6)
+simulation <- rep(3,1e8)
 outcome <- sapply(simulation,play)
 print(mean(outcome))
